@@ -54,3 +54,11 @@ add .env to gitignore
 STEP 5
 
 Create port
+declared in .env
+test connections to mongo and port with *node server.js
+or 
+set up nodemon to restart automatically after each change
+(add to package.json:     "dev": "nodemon server.js")
+
+
+
