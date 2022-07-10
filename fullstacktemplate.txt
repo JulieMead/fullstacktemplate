@@ -49,7 +49,7 @@ STEP 4
 Connect to MongoDB - add connection string to environment file
 (create new file named .env)
 make sure to insert password into string 
-add .env to gitignore file
+add .env to gitignore
 
 STEP 5
 
