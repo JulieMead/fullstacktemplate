@@ -40,10 +40,12 @@ STEP 2
 
 Require dependencies in server.js file
 
-how to require express?
+STEP 3
 
-const express = require('express')
-const app = express()
+Declare variables in server.js
 
-do same thing for all dependencies
+STEP 4
 
+Connect to MongoDB - add connection string to environment file
+(create new file named .env)
+make sure to insert password into string 
