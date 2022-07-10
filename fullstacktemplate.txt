@@ -1,0 +1,49 @@
+STEP 1
+
+dependencies(middleware) to install and what it does:
+*npm init
+*npm install express
+
+*npm install dotenv
+what does DOTENV do?
+it let us hide variables from our main code ie. passwords/codes
+hides the secret stuff
+
+*npm install cors
+what does CORS do?
+bypasses cross origin request blocks in browser
+sets cross origin access policy
+now we can access things locally
+
+*npm install mongodb
+what is MONGODB?
+our database - where data is stored
+why do we store data in database and not a text file?
+lots of reasons:
+we don't have unlimited storage locally
+when data starts getting big and complicated MongoDB keeps things organized 
+I can only fetch things when I need them and I don't have to hold all of that info all the time
+
+*npm install ejs
+what does EJS do?
+embedded javascript
+helps us dynamically generate html on the fly as we pass info through it
+
+*npm install nodemon --save-dev
+what does NODEMON do?
+makes it so that we don't have to manually restart the server every time we make a change
+
+what does --save-dev do?
+so that nodemon isn't 'in production'...it gets saved to devDependencies instead of will all of the normal dependencies. it is only being used for development
+
+STEP 2
+
+Require dependencies in server.js file
+
+how to require express?
+
+const express = require('express')
+const app = express()
+
+do same thing for all dependencies
+
