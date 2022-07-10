@@ -58,7 +58,8 @@ declared in .env
 test connections to mongo and port with *node server.js
 or 
 set up nodemon to restart automatically after each change
-(add to package.json:     "dev": "nodemon server.js")
+(add to package.json:     "dev": "nodemon server.js"
+npm run dev
 
 
 

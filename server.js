@@ -23,8 +23,27 @@ MongoClient.connect(dbConnectionString)
         collection = db.collection('oscar-winning-movies')
     })
 
+// STEP 6: SET MIDDLEWARE
+
+    //sets EJS as view engine
+    app.set('view engine', 'ejs')
+
+    //creates public folder to serve to client
+    app.use(express.static('public'))
+
+    //helps us parse URLs
+    app.use(express.urlencoded({extended:true}))
+
+    //helps parse JSON and read data that is being sent back and forth
+    app.use(express.json())
+
+    //stops CORS error from happening in browser
+    app.use(cors())
+
+
+    
 //STEP 5: CREATE PORT
 
 app.listen(process.env.PORT || PORT, () => {
-    console.log(`Server is running on port ${PORT}`)
+    console.log(`Server is running on Port ${PORT}!!!`)
 })
