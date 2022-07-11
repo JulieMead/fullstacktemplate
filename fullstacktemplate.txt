@@ -81,6 +81,14 @@ Add content to main.js, style.css, index.ejs
 STEP 9
 
 Create Heroku Repo
+*heroku login
+*heroku create (you can name it or not)
+*echo "web: node server.js" > Procfile
+*git add .
+*git commit -m "changes"
+*git push heroku main
+
+
 
 
 
