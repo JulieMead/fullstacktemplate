@@ -3,6 +3,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const { response } = require('express')
 const MongoClient = require('mongodb').MongoClient
 require('dotenv').config()
 const PORT = 8000
@@ -23,7 +24,7 @@ MongoClient.connect(dbConnectionString)
         collection = db.collection('oscar-winning-movies')
     })
 
-// STEP 6: SET MIDDLEWARE
+//STEP 6: SET MIDDLEWARE
 
     //sets EJS as view engine
     app.set('view engine', 'ejs')
@@ -40,8 +41,18 @@ MongoClient.connect(dbConnectionString)
     //stops CORS error from happening in browser
     app.use(cors())
 
+//STEP 9: SET SERVER TO REQUEST AND RESPOND
 
-    
+    app.get('/', async (req, res) => {
+        try {
+          response.render('index.ejs')  
+        }
+        catch (error) {
+          response.status(500).send({message: error.message})  
+        }
+    })
+
+
 //STEP 5: CREATE PORT
 
 app.listen(process.env.PORT || PORT, () => {
