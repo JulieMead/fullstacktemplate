@@ -28,6 +28,7 @@ I can only fetch things when I need them and I don't have to hold all of that in
 what does EJS do?
 embedded javascript
 helps us dynamically generate html on the fly as we pass info through it
+helps us with templating
 
 *npm install nodemon --save-dev
 what does NODEMON do?
@@ -60,6 +61,78 @@ or
 set up nodemon to restart automatically after each change
 (add to package.json:     "dev": "nodemon server.js"
 npm run dev
+
+STEP 6
+
+Set middleware
+helps us format in a way that all parties will understand
+clean it up
+
+STEP 7
+
+Create Public and Views folders
+add main.js and style.css to Public
+add index.ejs to Views
+
+STEP 8
+
+Add content to main.js, style.css, index.ejs
+
+STEP 9
+
+Create Heroku Repo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
