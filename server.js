@@ -43,7 +43,7 @@ MongoClient.connect(dbConnectionString)
 
 //STEP 9: SET SERVER TO REQUEST AND RESPOND
 
-    app.get ('/', async (request, response) => {
+    app.get('/', async (request, response) => {
         try {
           response.render('index.ejs')  
         }
